@@ -5,14 +5,11 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 
-# 루트 창 생성
 root = tk.Tk()
 root.withdraw()  # 처음엔 숨기기
 
-# 사용자에게 입력 받기 (초 단위)
 interval_seconds = simpledialog.askstring("시력 보호 설정", "몇 초마다 알림을 받을까요? (숫자만 입력)")
 
-# 입력 확인
 try:
     interval_seconds = int(interval_seconds)
     if interval_seconds <= 0:
@@ -25,7 +22,6 @@ except:
     root.destroy()
     exit()
 
-# 팝업 알림 함수
 def show_reminder():
     popup = tk.Toplevel()
     popup.title("시력 보호 알림")
@@ -54,8 +50,6 @@ def show_reminder():
     popup.after(5000, popup.destroy)  # 5초 뒤 닫기
     root.after(interval_ms, show_reminder)  # 다음 알림 예약
 
-# 첫 알림 예약
 root.after(interval_ms, show_reminder)
 
-# tkinter 이벤트 루프 시작
 root.mainloop()
