@@ -1,7 +1,6 @@
 # 시력 보호 알림  
 
-![](./image/image01.png)  
-![](./image/image02.png)
+![](./image/image01.png)  ![](./image/image02.png)
 
 ## 시력 보호 알림 Source code  
 
