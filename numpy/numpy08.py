@@ -1,0 +1,23 @@
+import numpy as np
+
+scores = np.array([[99, 93, 60], [98, 82, 93], [93, 65, 81], [78, 82, 81]])
+
+print(scores.sum())
+print(scores.sum(axis=0))
+print(scores.sum(axis=1))
+print(scores.mean())
+print(scores.sum(axis=0))
+print(scores.sum(axis=1))
+print(scores.std())
+print(scores.sum(axis=0))
+print(scores.sum(axis=1))
+print(scores.var())
+print(scores.sum(axis=0))
+print(scores.sum(axis=1))
+print(scores.max())
+print(scores.sum(axis=0))
+print(scores.sum(axis=1))
+print(scores.min())
+print(scores.sum(axis=0))
+print(scores.sum(axis=1))
+print(scores.argmax())
